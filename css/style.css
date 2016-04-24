@@ -1,0 +1,217 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/*Navigation Bar*/
+.top-navigation {
+  width: 100%;
+  background-color: #f1f1f1;
+  border-bottom: 1px solid #ddd;
+  position: fixed;
+}
+
+.top-navigation .content {
+  height: 4em;
+  width: 80em;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.top-navigation .content .links {
+  padding-top: 1em;
+  padding-bottom: 3em;
+  margin-bottom: 2em;
+  margin-top: 0;
+}
+
+.links li {
+  display: inline;
+  float: right;
+  font-family: "Neuton", sans-serif;
+  font-weight: 200;
+  font-size: 1.5em;
+  padding-left: 1em;
+}
+
+.links a:link {
+  text-decoration: none;
+  color: black;
+}
+
+.top-navigation .links a:hover {
+  cursor: pointer;
+}
+
+/*Introduction*/
+.introduction {
+  width: 100%;
+  height: 15em;
+}
+
+.introduction .content {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 5em;
+}
+
+.introduction .content h1,
+.introduction .content h2 {
+  font-family: "Playfair Display", sans-serif;
+}
+
+.introduction .content h1 {
+  font-size: 3em;
+  font-weight: 400;
+}
+
+.introduction .content h2 {
+  font-weight: 700;
+}
+
+.introduction .content h3 {
+  font-family: "Neuton", sans-serif;
+  font-weight: 400;
+  padding-bottom: 5em;
+}
+
+/*Projects*/
+.portfolio {
+  padding-top: 5em;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.portfolio .content {
+  display: block;
+  list-style: none;
+  font-family: "Neuton", sans-serif;
+  font-weight: 400;
+}
+
+.portfolio .content li {
+  padding: 2em;
+}
+
+.portfolio .content .caption h3 {
+  font-family: "Neuton", sans-serif;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+/*Social*/
+.social h5 {
+  font-size: 1em;
+  font-weight: 400;
+  margin-bottom: -.5em;
+}
+
+.social {
+  background-color: #fff;
+  overflow: auto;
+  padding-bottom: 5rem;
+  text-align: center;
+}
+
+.social hr {
+  border: 0;
+  border-top: 1px solid #eaebec;
+  margin: 1rem 5em;
+}
+
+.social .icons li {
+  border-radius: 1.25rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: inline-block;
+  margin: 1rem .5em;
+  border: 1px solid #eaebec;
+  padding: .75rem 0;
+}
+
+.social .content .icons {
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.social .icons li:hover {
+  cursor: pointer;
+}
+
+.social .twitter {
+  color: #55acee;
+}
+
+.social .facebook {
+  color: #4c66a4;
+}
+
+.social .instagram {
+  color: #3f729b;
+}
+
+.social .copy {
+  font-size: .9em;
+  font-weight: 300;
+  color: #838994;
+}
+
+/*Responsive Design*/
+@media only screen and (min-width: 550px) and (max-width: 1350px) {
+  .top-navigation .content {
+    max-width: 70%;
+    position: relative;
+  }
+  .portfolio img {
+    max-width: 100%;
+  }
+}
+
+/*@media only screen and (max-width: 1200px) {
+  .top-navigation .content .links {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .top-navigation .content .links {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .top-navigation .content .links {
+    width: 70%;
+  }
+  .portfolio img {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .top-navigation .content .links {
+    width: 60%;
+  }
+}*/
+
+@media only screen and (max-width: 500px) {
+  .top-navigation {
+    height: 4em;
+  }
+  .top-navigation .content .links {
+    font-size: 1em;
+    width: 30%;
+  }
+  .portfolio img {
+    max-width: 100%;
+  }
+}
+
+
